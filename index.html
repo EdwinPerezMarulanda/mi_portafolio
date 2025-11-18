@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mi Portafolio | Ingeniero de Software & Músico</title>
+	<!-- Enlace al archivo CSS externo -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!-- HEADER: Encabezado principal con navegación -->
+	<header id="header">
+		<nav class="navbar">
+			<h1 class="logo">Mi Portafolio</h1>
+			<!-- Botones de navegación que cambian la vista -->
+			<div class="nav-buttons">
+				<button class="nav-btn active" data-section="inicio">Inicio</button>
+				<button class="nav-btn" data-section="software">Ing. Software</button>
+				<button class="nav-btn" data-section="musica">Música</button>
+				<button class="nav-btn" data-section="contacto">Contacto</button>
+			</div>
+		</nav>
+	</header>
+
+	<!-- MAIN: Contenedor principal donde se mostrarán las diferentes secciones -->
+	<main id="main-content">
+		
+		<!-- SECCIÓN INICIO: Página de bienvenida -->
+		<section id="inicio" class="section active">
+			<div class="hero">
+				<h2 class="animate-in">¡Hola! Soy Edwin H Pérez M</h2>
+				<p class="subtitle animate-in">Futuro Ingeniero de Software | Músico | Profesor de Música</p>
+				<p class="description animate-in">
+					Combino la lógica de la programación con la creatividad de la música 
+					para crear experiencias únicas y enseñar con pasión.
+				</p>
+				<button class="cta-button" data-section="software">Conoce mi trabajo</button>
+			</div>
+		</section>
+
+		<!-- SECCIÓN SOFTWARE: Información sobre habilidades de programación -->
+		<section id="software" class="section">
+			<h2>Ingeniería de Software</h2>
+			<div class="cards-container">
+				<!-- Tarjeta 1: Lenguajes -->
+				<div class="card">
+					<div class="card-icon">💻</div>
+					<h3>Lenguajes</h3>
+					<ul class="skills-list">
+						<li>Java</li>
+						<li>JavaScript</li>
+						<li>HTML/CSS</li>
+					</ul>
+				</div>
+				
+				<!-- Tarjeta 2: Tecnologías -->
+				<div class="card">
+					<div class="card-icon">🛠️</div>
+					<h3>Tecnologías</h3>
+					<ul class="skills-list">
+						<li>SpringBoot</li>
+						<li>GitHub</li>
+						<li>MySQL</li>
+					</ul>
+				</div>
+				
+				<!-- Tarjeta 3: Proyectos -->
+				<div class="card">
+					<div class="card-icon">🚀</div>
+					<h3>Proyectos</h3>
+					<p>Sistema de gestión web</p>
+					<p>Software Educativo</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECCIÓN MÚSICA: Información sobre experiencia musical -->
+		<section id="musica" class="section">
+			<h2>Música & Enseñanza</h2>
+			<div class="cards-container">
+				<!-- Tarjeta 1: Como músico -->
+				<div class="card music-card">
+					<div class="card-icon">🎸</div>
+					<h3>Músico</h3>
+					<p>Experiencia en múltiples instrumentos y géneros musicales.</p>
+					<ul class="skills-list">
+						<li>Guitarra</li>
+						<li>Tiple</li>
+						<li>Cuatro</li>
+						<li>Piano</li>
+						<li>Saxofón</li>
+						<li>Percusión de las costas</li>
+						<li>Canto</li>
+						<li>Producción musical</li>
+						<li>Composición</li>
+					</ul>
+				</div>
+				
+				<!-- Tarjeta 2: Como profesor -->
+				<div class="card music-card">
+					<div class="card-icon">🎵</div>
+					<h3>Profesor de Música</h3>
+					<p>Enseño con pasión y metodologías adaptadas a cada estudiante.</p>
+					<ul class="skills-list">
+						<li>Clases individuales</li>
+						<li>Teoría musical</li>
+						<li>Técnica instrumental</li>
+						<li>Preparación de exámenes</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECCIÓN CONTACTO: Formulario para que te contacten -->
+		<section id="contacto" class="section">
+			<h2>Contáctame</h2>
+			<div class="contact-container">
+				<!-- Formulario de contacto -->
+				<form id="contact-form" class="contact-form">
+					<div class="form-group">
+						<label for="name">Nombre:</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="subject">Asunto:</label>
+						<select id="subject" name="subject" required>
+							<option value="">Selecciona una opción</option>
+							<option value="software">Proyecto de Software</option>
+							<option value="musica">Clases de Música</option>
+							<option value="otro">Otro</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="message">Mensaje:</label>
+						<textarea id="message" name="message" rows="5" required></textarea>
+					</div>
+					
+					<button type="submit" class="submit-btn">Enviar Mensaje</button>
+				</form>
+				
+				<!-- Área donde se mostrará el mensaje de confirmación -->
+				<div id="form-message" class="form-message hidden"></div>
+			</div>
+		</section>
+
+	</main>
+
+	<!-- FOOTER: Pie de página con información adicional -->
+	<footer id="footer">
+		<p>&copy; 2025 Edwin H. Pérez M. Todos los derechos reservados.</p>
+		<div class="social-links">
+			<a href="https://www.linkedin.com/in/edwin-perez-197663181/" class="social-link">LinkedIn</a>
+			<a href="https://github.com/EdwinPerezMarulanda" class="social-link">GitHub</a>
+		</div>
+	</footer>
+
+	<!-- Enlace al archivo JavaScript -->
+	<script src="script.js"></script>
+</body>
+</html>
