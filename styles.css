@@ -108,19 +108,15 @@ body {
 
 
 
+
 .hero {
 	text-align: center;
 	padding: 4rem 2rem;
-	background: white;
+	background: rgb(233, 233, 233);
 	border-radius: 20px;
 	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.hero h2 {
-	font-size: 3rem;
-	color: #667eea;
-	margin-bottom: 1rem;
-}
 
 .subtitle {
 	font-size: 1.5rem;
@@ -175,7 +171,7 @@ body {
 .section h2 {
 	text-align: center;
 	font-size: 2.5rem;
-	color: rgb(202, 255, 0);
+	color: rgba(202, 255, 0, 1);
 	margin-bottom: 3rem;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
